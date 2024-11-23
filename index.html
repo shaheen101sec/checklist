@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f4f4f9;
+            background: gray;
             color: #333;
         }
 
@@ -19,7 +19,7 @@
             padding: 20px;
             background: #fff;
             border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	    box-shadow:  0px 0px 30px 0px #9fc5e8;
         }
 
         h1 {
@@ -46,12 +46,12 @@
 
         li:hover {
             background: #eef;
+	    box-shadow:  0px 0px 10px 0px #a8b6d7;
         }
 
         input[type="checkbox"] {
             width: 18px;
             height: 18px;
-            accent-color: #007bff;
         }
 
         .footer {
@@ -72,200 +72,170 @@
 <body>
     <div class="container">
         <h1>Bug Bounty Methodology</h1>
-        <ul>
-	    <li><label><input type="checkbox"> Get your favorite coffee / drink</label></li>
-	    <li><label><input type="checkbox"> Get your -notes.md- file ready and make sure to note every interesting thing</label></li>
-	    <li><label><input type="checkbox"> enumerate the subdomains</label></li>
-	    <li><label><input type="checkbox"> get live subdomains with HTTPX</label></li>
-	    <li><label><input type="checkbox"> scan the ports with naabu tool</label></li>
-            <li><label><input type="checkbox"> Find the version of the target web server and test it for its Common Vulnerabilities (CVEs)</label></li>
-	    <li><label><input type="checkbox"> Try to find a developer dashboard or control panel in some unique Ports</label></li>
-	    <li><label><input type="checkbox"> If you found a control panel login or dashboard login pages in a uniqe port try to login with the defult credentials</label></li>
-	    <li><label><input type="checkbox"> Look for No/s, note them and make them -yes-</label></li>
-	    <li><label><input type="checkbox"> Look for can't, note them and make them -can-</label></li>
-            <li><label><input type="checkbox"> Check for subdomain takeovers</label></li>
-            <li><label><input type="checkbox"> Test for open redirects</label></li>
-            <li><label><input type="checkbox"> Identify unused endpoints</label></li>
-            <li><label><input type="checkbox"> Test for IDOR vulnerabilities</label></li>
-            <li><label><input type="checkbox"> Check API for excessive data exposure</label></li>
-            <li><label><input type="checkbox"> Look for unrestricted file uploads</label></li>
-            <li><label><input type="checkbox"> Test for XSS (Reflected and Stored)</label></li>
-            <li><label><input type="checkbox"> Inspect headers for sensitive data leakage</label></li>
-            <li><label><input type="checkbox"> Search for SQL injection vulnerabilities</label></li>
-            <li><label><input type="checkbox"> Test access controls on all sensitive actions</label></li>
-            <li><label><input type="checkbox"> Check for CSRF vulnerabilities</label></li>
-            <li><label><input type="checkbox"> Probe for misconfigured CORS</label></li>
-            <li><label><input type="checkbox"> Test JWT for algorithm and key issues</label></li>
-            <li><label><input type="checkbox"> Analyze password reset mechanisms</label></li>
-            <li><label><input type="checkbox"> Inspect for sensitive tokens in source code</label></li>
-            <li><label><input type="checkbox"> Conduct directory brute-forcing</label></li>
-            <li><label><input type="checkbox"> Test file upload restrictions with bypass attempts</label></li>
-            <li><label><input type="checkbox"> Enumerate user accounts via response differences</label></li>
-            <li><label><input type="checkbox"> Check session management for weak points</label></li>
-            <li><label><input type="checkbox"> Explore DNS records for misconfigurations</label></li>
-            <li><label><input type="checkbox"> Attempt privilege escalation on admin endpoints</label></li>
-            <li><label><input type="checkbox"> Verify encryption practices (TLS, weak ciphers)</label></li>
-            <li><label><input type="checkbox"> Test for SSRF vulnerabilities</label></li>
-            <li><label><input type="checkbox"> Identify unused third-party integrations</label></li>
-            <li><label><input type="checkbox"> Inspect API documentation for flaws</label></li>
-            <li><label><input type="checkbox"> Explore business logic flaws</label></li>
-            <li><label><input type="checkbox"> Test input fields for injection flaws</label></li>
-            <li><label><input type="checkbox"> Scan for publicly accessible environment files</label></li>
-            <li><label><input type="checkbox"> Search for default credentials in services</label></li>
-            <li><label><input type="checkbox"> Check backup files or old versions</label></li>
-	    <li><label><input type="checkbox"> Check for subdomain takeovers</label></li>
-            <li><label><input type="checkbox"> Test for open redirects</label></li>
-            <li><label><input type="checkbox"> Identify unused endpoints</label></li>
-    <li><label><input type="checkbox"> Test for IDOR vulnerabilities</label></li>
-    <li><label><input type="checkbox"> Check API for excessive data exposure</label></li>
-    <li><label><input type="checkbox"> Look for unrestricted file uploads</label></li>
-    <li><label><input type="checkbox"> Test for XSS (Reflected and Stored)</label></li>
-    <li><label><input type="checkbox"> Inspect headers for sensitive data leakage</label></li>
-    <li><label><input type="checkbox"> Search for SQL injection vulnerabilities</label></li>
-    <li><label><input type="checkbox"> Test access controls on all sensitive actions</label></li>
-    <li><label><input type="checkbox"> Check for CSRF vulnerabilities</label></li>
-    <li><label><input type="checkbox"> Probe for misconfigured CORS</label></li>
-    <li><label><input type="checkbox"> Test JWT for algorithm and key issues</label></li>
-    <li><label><input type="checkbox"> Analyze password reset mechanisms</label></li>
-    <li><label><input type="checkbox"> Inspect for sensitive tokens in source code</label></li>
-    <li><label><input type="checkbox"> Conduct directory brute-forcing</label></li>
-    <li><label><input type="checkbox"> Test file upload restrictions with bypass attempts</label></li>
-    <li><label><input type="checkbox"> Enumerate user accounts via response differences</label></li>
-    <li><label><input type="checkbox"> Check session management for weak points</label></li>
-    <li><label><input type="checkbox"> Explore DNS records for misconfigurations</label></li>
-    <li><label><input type="checkbox"> Attempt privilege escalation on admin endpoints</label></li>
-    <li><label><input type="checkbox"> Verify encryption practices (TLS, weak ciphers)</label></li>
-    <li><label><input type="checkbox"> Test for SSRF vulnerabilities</label></li>
-    <li><label><input type="checkbox"> Identify unused third-party integrations</label></li>
-    <li><label><input type="checkbox"> Inspect API documentation for flaws</label></li>
-    <li><label><input type="checkbox"> Explore business logic flaws</label></li>
-    <li><label><input type="checkbox"> Test input fields for injection flaws</label></li>
-    <li><label><input type="checkbox"> Scan for publicly accessible environment files</label></li>
-    <li><label><input type="checkbox"> Search for default credentials in services</label></li>
-    <li><label><input type="checkbox"> Check backup files or old versions</label></li>
-    <li><label><input type="checkbox"> Test HTTP methods for misconfigurations (e.g., PUT, DELETE)</label></li>
-    <li><label><input type="checkbox"> Check robots.txt for hidden or sensitive endpoints</label></li>
-    <li><label><input type="checkbox"> Inspect sitemap.xml for overlooked URLs</label></li>
-    <li><label><input type="checkbox"> Test for improper URL encoding vulnerabilities</label></li>
-    <li><label><input type="checkbox"> Check for sensitive info in error responses (e.g., stack traces)</label></li>
-    <li><label><input type="checkbox"> Validate session expiration on logout</label></li>
-    <li><label><input type="checkbox"> Analyze rate limiting on sensitive actions (e.g., login)</label></li>
-    <li><label><input type="checkbox"> Look for cacheable sensitive pages (e.g., authenticated pages)</label></li>
-    <li><label><input type="checkbox"> Check for insecure iframe embedding (clickjacking)</label></li>
-    <li><label><input type="checkbox"> Test for unrestricted mass assignment vulnerabilities</label></li>
-    <li><label><input type="checkbox"> Check for unvalidated redirects in emails</label></li>
-    <li><label><input type="checkbox"> Look for vulnerable or outdated third-party libraries</label></li>
-    <li><label><input type="checkbox"> Analyze file metadata for sensitive info (e.g., EXIF)</label></li>
-    <li><label><input type="checkbox"> Test multipart/form-data requests for boundary issues</label></li>
-    <li><label><input type="checkbox"> Inspect for insecure default configurations in APIs</label></li>
-    <li><label><input type="checkbox"> Test file downloads for path traversal issues</label></li>
-    <li><label><input type="checkbox"> Check for exposed admin dashboards or control panels</label></li>
-    <li><label><input type="checkbox"> Identify unused or exposed API keys</label></li>
-    <li><label><input type="checkbox"> Test for backup or temporary files in web directories</label></li>
-    <li><label><input type="checkbox"> Search for exposed `.htaccess` or `.htpasswd` files</label></li>
-    <li><label><input type="checkbox"> Verify if server directory listing is enabled</label></li>
-    <li><label><input type="checkbox"> Test HTTP headers for misconfigured security policies (e.g., CSP, HSTS)</label></li>
-    <li><label><input type="checkbox"> Inspect logs for sensitive data exposure</label></li>
-    <li><label><input type="checkbox"> Test for weak encryption on cookie contents</label></li>
-    <li><label><input type="checkbox"> Validate token expiration for one-time use actions</label></li>
-    <li><label><input type="checkbox"> Check for API rate limiting bypass</label></li>
-    <li><label><input type="checkbox"> Test file parsers for vulnerabilities (e.g., XML parsing attacks)</label></li>
-    <li><label><input type="checkbox"> Check for insecure password reset tokens (e.g., predictable or reusable tokens)</label></li>
-    <li><label><input type="checkbox"> Test for improper input validation in JSON APIs</label></li>
-    <li><label><input type="checkbox"> Look for leaked credentials in debug or dev configurations</label></li>
-    <li><label><input type="checkbox"> Check for debug endpoints left active in production</label></li>
-    <li><label><input type="checkbox"> Test for insecure deserialization vulnerabilities</label></li>
-    <li><label><input type="checkbox"> Look for sensitive cookies with SameSite misconfigurations</label></li>
-    <li><label><input type="checkbox"> Test for SQL injection through HTTP headers (e.g., User-Agent, Referer)</label></li>
-    <li><label><input type="checkbox"> Analyze websocket frames for sensitive data or injection flaws</label></li>
-    <li><label><input type="checkbox"> Identify unprotected server status or monitoring endpoints</label></li>
-    <li><label><input type="checkbox"> Test for improper handling of special characters in inputs</label></li>
-    <li><label><input type="checkbox"> Check for non-standard HTTP status codes revealing sensitive info</label></li>
-    <li><label><input type="checkbox"> Test for weak access control on file sharing services</label></li>
-    <li><label><input type="checkbox"> Look for excessive permissions in cloud storage (e.g., S3 buckets)</label></li>
-    <li><label><input type="checkbox"> Validate that sensitive actions require re-authentication</label></li>
-    <li><label><input type="checkbox"> Test for reflected file download (RFD) vulnerabilities</label></li>
-    <li><label><input type="checkbox"> Inspect exposed `.DS_Store` files for directory info</label></li>
-    <li><label><input type="checkbox"> Check if backup databases are accessible via default ports</label></li>
-    <li><label><input type="checkbox"> Test for improper error handling in APIs (e.g., overly verbose messages)</label></li>
-    <li><label><input type="checkbox"> Identify parameters vulnerable to overflows (buffer or integer)</label></li>
-    <li><label><input type="checkbox"> Test for unprotected websocket endpoints accessible without authentication</label></li>
-    <li><label><input type="checkbox"> Analyze email headers for potential spoofing vulnerabilities</label></li>
-    <li><label><input type="checkbox"> Check for weak validation on OAuth token exchanges</label></li>
-    <li><label><input type="checkbox"> Inspect old DNS records for misconfigurations or hijack risks</label></li>
-    <li><label><input type="checkbox"> Test for vulnerable regex patterns in input validation</label></li>
-    <li><label><input type="checkbox"> Explore JSONP endpoints for sensitive data leaks</label></li>
-    <li><label><input type="checkbox"> Look for hardcoded secrets in JavaScript files</label></li>
-    <li><label><input type="checkbox"> Test for insecure direct upload permissions in cloud services</label></li>
-    <li><label><input type="checkbox"> Verify if audit logs are protected and inaccessible to users</label></li>
-    <li><label><input type="checkbox"> Test for improper sanitization of file extensions on uploads</label></li>
-    <li><label><input type="checkbox"> Inspect API requests for predictable or sequential identifiers</label></li>
-    <li><label><input type="checkbox"> Check for exposed WSDL files in SOAP-based APIs</label></li>
-    <li><label><input type="checkbox"> Identify excessive information leakage in HTML comments</label></li>
-    <li><label><input type="checkbox"> Look for misconfigured DNSSEC settings or missing configurations</label></li>
-    <li><label><input type="checkbox"> Test webhooks for SSRF or injection vulnerabilities</label></li>
-    <li><label><input type="checkbox"> Validate Cross-Origin Resource Sharing (CORS) preflight responses</label></li>
-    <li><label><input type="checkbox"> Search for open ports exposing unauthenticated services</label></li>
-    <li><label><input type="checkbox"> Analyze third-party integrations for callback or redirection issues</label></li>
-    <li><label><input type="checkbox"> Check for hardcoded database credentials in source code</label></li>
-    <li><label><input type="checkbox"> Test for missing input length validation in forms</label></li>
-    <li><label><input type="checkbox"> Search for vulnerable command injection points in APIs</label></li>
-    <li><label><input type="checkbox"> Validate that admin actions require admin-level tokens</label></li>
-    <li><label><input type="checkbox"> Inspect source code repositories for unprotected `.env` files</label></li>
+<ul>
+<li><label><input type="checkbox"> Get your favorite coffee / drink</label></li>
+<li><label><input type="checkbox"> Get your -notes.md- file ready and make sure to note every interesting thing</label></li>
+<li><label><input type="checkbox"> enumerate the subdomains</label></li>
+<li><label><input type="checkbox"> get live subdomains with HTTPX</label></li>
+<li><label><input type="checkbox"> scan the ports with naabu tool</label></li>
+<li><label><input type="checkbox"> Find the version of the target web server and test it for its Common Vulnerabilities (CVEs)</label></li>
+<li><label><input type="checkbox"> Try to find a developer dashboard or control panel in some unique Ports</label></li>
+<li><label><input type="checkbox"> If you found a control panel login or dashboard login pages in a uniqe port try to login with the defult credentials</label></li>
+<li><label><input type="checkbox"> Look for No/s, note them and make them -yes-</label></li>
+<li><label><input type="checkbox"> Look for can't, note them and make them -can-</label></li>
+<li><label><input type="checkbox"> Check for subdomain takeovers</label></li>
+<li><label><input type="checkbox"> Test for open redirects</label></li>
+<li><label><input type="checkbox"> Identify unused endpoints</label></li>
+<li><label><input type="checkbox"> Test for IDOR vulnerabilities</label></li>
+<li><label><input type="checkbox"> Check API for excessive data exposure</label></li>
+<li><label><input type="checkbox"> Look for unrestricted file uploads</label></li>
+<li><label><input type="checkbox"> Test for XSS (Reflected and Stored)</label></li>
+<li><label><input type="checkbox"> Inspect headers for sensitive data leakage</label></li>
+<li><label><input type="checkbox"> Search for SQL injection vulnerabilities</label></li>
+<li><label><input type="checkbox"> Test access controls on all sensitive actions</label></li>
+<li><label><input type="checkbox"> Check for CSRF vulnerabilities</label></li>
+<li><label><input type="checkbox"> Probe for misconfigured CORS</label></li>
+<li><label><input type="checkbox"> Test JWT for algorithm and key issues</label></li>
+<li><label><input type="checkbox"> Analyze password reset mechanisms</label></li>
+<li><label><input type="checkbox"> Inspect for sensitive tokens in source code</label></li>
+<li><label><input type="checkbox"> Conduct directory brute-forcing</label></li>
+<li><label><input type="checkbox"> Test file upload restrictions with bypass attempts</label></li>
+<li><label><input type="checkbox"> Enumerate user accounts via response differences</label></li>
+<li><label><input type="checkbox"> Check session management for weak points</label></li>
+<li><label><input type="checkbox"> Explore DNS records for misconfigurations</label></li>
+<li><label><input type="checkbox"> Attempt privilege escalation on admin endpoints</label></li>
+<li><label><input type="checkbox"> Verify encryption practices (TLS, weak ciphers)</label></li>
+<li><label><input type="checkbox"> Test for SSRF vulnerabilities</label></li>
+<li><label><input type="checkbox"> Identify unused third-party integrations</label></li>
+<li><label><input type="checkbox"> Inspect API documentation for flaws</label></li>
+<li><label><input type="checkbox"> Explore business logic flaws</label></li>
+<li><label><input type="checkbox"> Test input fields for injection flaws</label></li>
+<li><label><input type="checkbox"> Scan for publicly accessible environment files</label></li>
+<li><label><input type="checkbox"> Search for default credentials in services</label></li>
+<li><label><input type="checkbox"> Check backup files or old versions</label></li>
+<li><label><input type="checkbox"> Test HTTP methods for misconfigurations (e.g., PUT, DELETE)</label></li>
+<li><label><input type="checkbox"> Check robots.txt for hidden or sensitive endpoints</label></li>
+<li><label><input type="checkbox"> Inspect sitemap.xml for overlooked URLs</label></li>
+<li><label><input type="checkbox"> Test for improper URL encoding vulnerabilities</label></li>
+<li><label><input type="checkbox"> Check for sensitive info in error responses (e.g., stack traces)</label></li>
+<li><label><input type="checkbox"> Validate session expiration on logout</label></li>
+<li><label><input type="checkbox"> Analyze rate limiting on sensitive actions (e.g., login)</label></li>
+<li><label><input type="checkbox"> Look for cacheable sensitive pages (e.g., authenticated pages)</label></li>
+<li><label><input type="checkbox"> Check for insecure iframe embedding (clickjacking)</label></li>
+<li><label><input type="checkbox"> Test for unrestricted mass assignment vulnerabilities</label></li>
+<li><label><input type="checkbox"> Check for unvalidated redirects in emails</label></li>
+<li><label><input type="checkbox"> Look for vulnerable or outdated third-party libraries</label></li>
+<li><label><input type="checkbox"> Analyze file metadata for sensitive info (e.g., EXIF)</label></li>
+<li><label><input type="checkbox"> Test multipart/form-data requests for boundary issues</label></li>
+<li><label><input type="checkbox"> Inspect for insecure default configurations in APIs</label></li>
+<li><label><input type="checkbox"> Test file downloads for path traversal issues</label></li>
+<li><label><input type="checkbox"> Check for exposed admin dashboards or control panels</label></li>
+<li><label><input type="checkbox"> Identify unused or exposed API keys</label></li>
+<li><label><input type="checkbox"> Test for backup or temporary files in web directories</label></li>
+<li><label><input type="checkbox"> Search for exposed `.htaccess` or `.htpasswd` files</label></li>
+<li><label><input type="checkbox"> Verify if server directory listing is enabled</label></li>
+<li><label><input type="checkbox"> Test HTTP headers for misconfigured security policies (e.g., CSP, HSTS)</label></li>
+<li><label><input type="checkbox"> Inspect logs for sensitive data exposure</label></li>
+<li><label><input type="checkbox"> Test for weak encryption on cookie contents</label></li>
+<li><label><input type="checkbox"> Validate token expiration for one-time use actions</label></li>
+<li><label><input type="checkbox"> Check for API rate limiting bypass</label></li>
+<li><label><input type="checkbox"> Test file parsers for vulnerabilities (e.g., XML parsing attacks)</label></li>
+<li><label><input type="checkbox"> Check for insecure password reset tokens (e.g., predictable or reusable tokens)</label></li>
+<li><label><input type="checkbox"> Test for improper input validation in JSON APIs</label></li>
+<li><label><input type="checkbox"> Look for leaked credentials in debug or dev configurations</label></li>
+<li><label><input type="checkbox"> Check for debug endpoints left active in production</label></li>
+<li><label><input type="checkbox"> Test for insecure deserialization vulnerabilities</label></li>
+<li><label><input type="checkbox"> Look for sensitive cookies with SameSite misconfigurations</label></li>
+<li><label><input type="checkbox"> Test for SQL injection through HTTP headers (e.g., User-Agent, Referer)</label></li>
+<li><label><input type="checkbox"> Analyze websocket frames for sensitive data or injection flaws</label></li>
+<li><label><input type="checkbox"> Identify unprotected server status or monitoring endpoints</label></li>
+<li><label><input type="checkbox"> Test for improper handling of special characters in inputs</label></li>
+<li><label><input type="checkbox"> Check for non-standard HTTP status codes revealing sensitive info</label></li>
+<li><label><input type="checkbox"> Test for weak access control on file sharing services</label></li>
+<li><label><input type="checkbox"> Look for excessive permissions in cloud storage (e.g., S3 buckets)</label></li>
+<li><label><input type="checkbox"> Validate that sensitive actions require re-authentication</label></li>
+<li><label><input type="checkbox"> Test for reflected file download (RFD) vulnerabilities</label></li>
+<li><label><input type="checkbox"> Inspect exposed `.DS_Store` files for directory info</label></li>
+<li><label><input type="checkbox"> Check if backup databases are accessible via default ports</label></li>
+<li><label><input type="checkbox"> Test for improper error handling in APIs (e.g., overly verbose messages)</label></li>
+<li><label><input type="checkbox"> Identify parameters vulnerable to overflows (buffer or integer)</label></li>
+<li><label><input type="checkbox"> Test for unprotected websocket endpoints accessible without authentication</label></li>
+<li><label><input type="checkbox"> Analyze email headers for potential spoofing vulnerabilities</label></li>
+<li><label><input type="checkbox"> Check for weak validation on OAuth token exchanges</label></li>
+<li><label><input type="checkbox"> Inspect old DNS records for misconfigurations or hijack risks</label></li>
+<li><label><input type="checkbox"> Test for vulnerable regex patterns in input validation</label></li>
+<li><label><input type="checkbox"> Explore JSONP endpoints for sensitive data leaks</label></li>
+<li><label><input type="checkbox"> Look for hardcoded secrets in JavaScript files</label></li>
+<li><label><input type="checkbox"> Test for insecure direct upload permissions in cloud services</label></li>
+<li><label><input type="checkbox"> Verify if audit logs are protected and inaccessible to users</label></li>
+<li><label><input type="checkbox"> Test for improper sanitization of file extensions on uploads</label></li>
+<li><label><input type="checkbox"> Inspect API requests for predictable or sequential identifiers</label></li>
+<li><label><input type="checkbox"> Check for exposed WSDL files in SOAP-based APIs</label></li>
+<li><label><input type="checkbox"> Identify excessive information leakage in HTML comments</label></li>
+<li><label><input type="checkbox"> Look for misconfigured DNSSEC settings or missing configurations</label></li>
+<li><label><input type="checkbox"> Test webhooks for SSRF or injection vulnerabilities</label></li>
+<li><label><input type="checkbox"> Validate Cross-Origin Resource Sharing (CORS) preflight responses</label></li>
+<li><label><input type="checkbox"> Search for open ports exposing unauthenticated services</label></li>
+<li><label><input type="checkbox"> Analyze third-party integrations for callback or redirection issues</label></li>
+<li><label><input type="checkbox"> Check for hardcoded database credentials in source code</label></li>
+<li><label><input type="checkbox"> Test for missing input length validation in forms</label></li>
+<li><label><input type="checkbox"> Search for vulnerable command injection points in APIs</label></li>
+<li><label><input type="checkbox"> Validate that admin actions require admin-level tokens</label></li>
+<li><label><input type="checkbox"> Inspect source code repositories for unprotected `.env` files</label></li>
 <li><label><input type="checkbox"> Test for weak CSP (Content Security Policy) allowing XSS</label></li>
-    <li><label><input type="checkbox"> Inspect websocket traffic for unauthenticated commands</label></li>
-    <li><label><input type="checkbox"> Verify that all sensitive resources require HTTPS</label></li>
-    <li><label><input type="checkbox"> Test for unrestricted cross-domain POST requests</label></li>
-    <li><label><input type="checkbox"> Check for sensitive files in exposed `.well-known` directories</label></li>
-    <li><label><input type="checkbox"> Look for exposed private IP ranges in server responses</label></li>
-    <li><label><input type="checkbox"> Test for null-byte injection in file paths or parameters</label></li>
-    <li><label><input type="checkbox"> Analyze error messages for leaked stack traces or debug info</label></li>
-    <li><label><input type="checkbox"> Inspect for unprotected GraphQL endpoints</label></li>
-    <li><label><input type="checkbox"> Check for backup files in source control like `.bak`, `.old`, `.zip`</label></li>
-    <li><label><input type="checkbox"> Test for file upload bypass using double extensions (e.g., `file.php.png`)</label></li>
-    <li><label><input type="checkbox"> Validate that public resources are not exposing private metadata</label></li>
-    <li><label><input type="checkbox"> Test for lack of server-side validation in mobile app requests</label></li>
-    <li><label><input type="checkbox"> Explore exposed Swagger or API documentation for vulnerable endpoints</label></li>
-    <li><label><input type="checkbox"> Test for weak URL signing mechanisms</label></li>
-    <li><label><input type="checkbox"> Search for debug or test pages left in production</label></li>
-    <li><label><input type="checkbox"> Inspect headers for strict transport security (HSTS) misconfigurations</label></li>
-    <li><label><input type="checkbox"> Test for unsanitized inputs in XML files</label></li>
-    <li><label><input type="checkbox"> Analyze third-party widgets for security risks (e.g., chatbots)</label></li>
-    <li><label><input type="checkbox"> Test API endpoints for HTTP method overrides (e.g., `X-HTTP-Method-Override`)</label></li>
-    <li><label><input type="checkbox"> Check for JSON injection vulnerabilities in APIs</label></li>
-    <li><label><input type="checkbox"> Test mobile app APIs for improper token handling</label></li>
-    <li><label><input type="checkbox"> Verify file download functionalities for directory traversal</label></li>
-    <li><label><input type="checkbox"> Test for cache poisoning vulnerabilities in headers</label></li>
-    <li><label><input type="checkbox"> Look for insecure file handling in web servers (e.g., Apache, Nginx)</label></li>
-    <li><label><input type="checkbox"> Inspect image upload handlers for potential payload injection</label></li>
-    <li><label><input type="checkbox"> Check for sensitive data in exposed memory dumps</label></li>
-    <li><label><input type="checkbox"> Test for insecure OpenID Connect (OIDC) flows</label></li>
-    <li><label><input type="checkbox"> Inspect chatbot functionalities for XSS or injection risks</label></li>
-    <li><label><input type="checkbox"> Test for insecure file permission configurations on uploaded files</label></li>
-    <li><label><input type="checkbox"> Validate that ID tokens are properly signed and validated</label></li>
-    <li><label><input type="checkbox"> Check for spoofable Host headers in HTTP requests</label></li>
-    <li><label><input type="checkbox"> Test for token replay attacks in session management</label></li>
-    <li><label><input type="checkbox"> Look for unrestricted `OPTIONS` methods in APIs</label></li>
-    <li><label><input type="checkbox"> Check for vulnerable DNS record configurations, like MX or SPF</label></li>
-    <li><label><input type="checkbox"> Validate input sanitization for file names in upload features</label></li>
-    <li><label><input type="checkbox"> Test for response splitting attacks on headers</label></li>
-    <li><label><input type="checkbox"> Inspect OAuth flows for misconfigurations (e.g., missing `state`)</label></li>
-    <li><label><input type="checkbox"> Look for API endpoints with sensitive data in query parameters</label></li>
-    <li><label><input type="checkbox"> Test for insecure direct editing of server-side resources</label></li>
-    <li><label><input type="checkbox"> Check for insecure use of browser storage (e.g., localStorage)</label></li>
-    <li><label><input type="checkbox"> Validate secure cookie attributes (`HttpOnly`, `Secure`, `SameSite`)</label></li>
-    <li><label><input type="checkbox"> Inspect for unintended exposure of internal-only features</label></li>
-    <li><label><input type="checkbox"> Test PDF generators for injection vulnerabilities</label></li>
-    <li><label><input type="checkbox"> Check for unsafe operations in CI/CD pipelines exposed to the web</label></li>
-    <li><label><input type="checkbox"> Inspect sensitive files cached by browsers</label></li>
-    <li><label><input type="checkbox"> Validate that audit logs do not leak sensitive user data</label></li>
-    <li><label><input type="checkbox"> Look for API responses containing debug info or stack traces</label></li>
-    <li><label><input type="checkbox"> Check for session tokens stored insecurely in browser history</label></li>
-    <li><label><input type="checkbox"> Test if error messages reveal the presence of specific resources</label></li>
-        </ul>
-        <div class="footer">
-            <p>&copy; 2024 Bug Bounty Checklist. by shaheen101sec.</p>
-        </div>
-    </div>
+<li><label><input type="checkbox"> Inspect websocket traffic for unauthenticated commands</label></li>
+<li><label><input type="checkbox"> Verify that all sensitive resources require HTTPS</label></li>
+<li><label><input type="checkbox"> Test for unrestricted cross-domain POST requests</label></li>
+<li><label><input type="checkbox"> Check for sensitive files in exposed `.well-known` directories</label></li>
+<li><label><input type="checkbox"> Look for exposed private IP ranges in server responses</label></li>
+<li><label><input type="checkbox"> Test for null-byte injection in file paths or parameters</label></li>
+<li><label><input type="checkbox"> Analyze error messages for leaked stack traces or debug info</label></li>
+<li><label><input type="checkbox"> Inspect for unprotected GraphQL endpoints</label></li>
+<li><label><input type="checkbox"> Check for backup files in source control like `.bak`, `.old`, `.zip`</label></li>
+<li><label><input type="checkbox"> Test for file upload bypass using double extensions (e.g., `file.php.png`)</label></li>
+<li><label><input type="checkbox"> Validate that public resources are not exposing private metadata</label></li>
+<li><label><input type="checkbox"> Test for lack of server-side validation in mobile app requests</label></li>
+<li><label><input type="checkbox"> Explore exposed Swagger or API documentation for vulnerable endpoints</label></li>
+<li><label><input type="checkbox"> Test for weak URL signing mechanisms</label></li>
+<li><label><input type="checkbox"> Search for debug or test pages left in production</label></li>
+<li><label><input type="checkbox"> Inspect headers for strict transport security (HSTS) misconfigurations</label></li>
+<li><label><input type="checkbox"> Test for unsanitized inputs in XML files</label></li>
+<li><label><input type="checkbox"> Analyze third-party widgets for security risks (e.g., chatbots)</label></li>
+<li><label><input type="checkbox"> Test API endpoints for HTTP method overrides (e.g., `X-HTTP-Method-Override`)</label></li>
+<li><label><input type="checkbox"> Check for JSON injection vulnerabilities in APIs</label></li>
+<li><label><input type="checkbox"> Test mobile app APIs for improper token handling</label></li>
+<li><label><input type="checkbox"> Verify file download functionalities for directory traversal</label></li>
+<li><label><input type="checkbox"> Test for cache poisoning vulnerabilities in headers</label></li>
+<li><label><input type="checkbox"> Look for insecure file handling in web servers (e.g., Apache, Nginx)</label></li>
+<li><label><input type="checkbox"> Inspect image upload handlers for potential payload injection</label></li>
+<li><label><input type="checkbox"> Check for sensitive data in exposed memory dumps</label></li>
+<li><label><input type="checkbox"> Test for insecure OpenID Connect (OIDC) flows</label></li>
+<li><label><input type="checkbox"> Inspect chatbot functionalities for XSS or injection risks</label></li>
+<li><label><input type="checkbox"> Test for insecure file permission configurations on uploaded files</label></li>
+<li><label><input type="checkbox"> Validate that ID tokens are properly signed and validated</label></li>
+<li><label><input type="checkbox"> Check for spoofable Host headers in HTTP requests</label></li>
+<li><label><input type="checkbox"> Test for token replay attacks in session management</label></li>
+<li><label><input type="checkbox"> Look for unrestricted `OPTIONS` methods in APIs</label></li>
+<li><label><input type="checkbox"> Check for vulnerable DNS record configurations, like MX or SPF</label></li>
+<li><label><input type="checkbox"> Validate input sanitization for file names in upload features</label></li>
+<li><label><input type="checkbox"> Test for response splitting attacks on headers</label></li>
+<li><label><input type="checkbox"> Inspect OAuth flows for misconfigurations (e.g., missing `state`)</label></li>
+<li><label><input type="checkbox"> Look for API endpoints with sensitive data in query parameters</label></li>
+<li><label><input type="checkbox"> Test for insecure direct editing of server-side resources</label></li>
+<li><label><input type="checkbox"> Check for insecure use of browser storage (e.g., localStorage)</label></li>
+<li><label><input type="checkbox"> Validate secure cookie attributes (`HttpOnly`, `Secure`, `SameSite`)</label></li>
+<li><label><input type="checkbox"> Inspect for unintended exposure of internal-only features</label></li>
+<li><label><input type="checkbox"> Test PDF generators for injection vulnerabilities</label></li>
+<li><label><input type="checkbox"> Check for unsafe operations in CI/CD pipelines exposed to the web</label></li>
+<li><label><input type="checkbox"> Inspect sensitive files cached by browsers</label></li>
+<li><label><input type="checkbox"> Validate that audit logs do not leak sensitive user data</label></li>
+<li><label><input type="checkbox"> Look for API responses containing debug info or stack traces</label></li>
+<li><label><input type="checkbox"> Check for session tokens stored insecurely in browser history</label></li>
+<li><label><input type="checkbox"> Test if error messages reveal the presence of specific resources</label></li>
+
+</ul>
+<div class="footer">
+<p>&copy; 2024 Bug Bounty Checklist. by shaheen101sec.</p>
+</div>
 </body>
 </html>
