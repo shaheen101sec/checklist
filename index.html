@@ -79,6 +79,7 @@
 <li><label><input type="checkbox"> In the main domain look at -: robots.txt :- file and try to see if you can access the Disallow files</li>
 <li><label><input type="checkbox"> enumerate the subdomains</label></li>
 <li><label><input type="checkbox"> get live subdomains with HTTPX</label></li>
+<li><label><input type="checkbox"> Fuzz the apis domains and apis directories and the main domain with ffuf</label></li>
 <li><label><input type="checkbox"> Get the js files with tools like -: Katana :-</label></li>
 <li><label><input type="checkbox"> Extract secrets or endpoints from the js file -: curl -s https://target.com/main.js | sed ‘s/\./\n/g’ | grep ‘/api/’ | sort -u | grep -o -E ‘(https?://)?/?[{}a-z0–9A-Z_\.-]{2,}/[{}/a-z0–9A-Z_\.-]+’ :-    or -: curl -s https://app.com/main.js | sed ‘s/\./\n/g’ | grep ‘/v1/’ | sort -u :-</li>
 <li><label><input type="checkbox"> scan the ports with naabu tool and try to exploit the open ports</label></li>
