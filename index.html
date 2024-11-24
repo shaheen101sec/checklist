@@ -79,6 +79,7 @@
 <li><label><input type="checkbox"> In the main domain look at -: robots.txt :- file and try to see if you can access the Disallow files</li>
 <li><label><input type="checkbox"> enumerate the subdomains</label></li>
 <li><label><input type="checkbox"> get live subdomains with HTTPX</label></li>
+<li><label><input type="checkbox"> use nuceli tech detect templates to know what is the website technology</label></li>
 <li><label><input type="checkbox"> Try to do a request for all the subdomains with a reverse shell in the User-agent and see if you can get an RCE : here is some payloads : <a href="https://shaheen101sec.github.io/rce/index.txt">Click here!</a></label></li>
 <li><label><input type="checkbox"> Get the js files with tools like -: Katana :-</label></li>
 <li><label><input type="checkbox"> Extract secrets or endpoints from the js file -: curl -s https://target.com/main.js | sed ‘s/\./\n/g’ | grep ‘/api/’ | sort -u | grep -o -E ‘(https?://)?/?[{}a-z0–9A-Z_\.-]{2,}/[{}/a-z0–9A-Z_\.-]+’ :-    or -: curl -s https://app.com/main.js | sed ‘s/\./\n/g’ | grep ‘/v1/’ | sort -u :-</li>
